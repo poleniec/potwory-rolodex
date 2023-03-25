@@ -1,0 +1,73 @@
+body {
+  background: linear-gradient(to right, #52bbc9, #080446);
+  animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -100px;
+  margin-top: 100px;
+}
+
+
+.title {
+  font-family: 'Bigelow Rules', cursive;
+  text-align: center;
+  font-size: 120px;
+  margin: 50px 0;
+  text-shadow: 2px 2px 4px #000000;
+  color: #52bbc9;
+}
+.monster-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+  padding: 150px;
+}
+
+.monster-card {
+  margin: 30px;
+  padding: 20px;
+  background-color: #245297;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  min-width: 200px;
+  max-width: 250px;
+}
+
+.monster-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.monster-card h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.monster-card p {
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.monster-card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transform: scale(1.1);
+}
